@@ -15,7 +15,7 @@ def controller(dict):
             best_price = value
             winner = key
 
-
+    print("\n" * 100)
     print(f"The winner is {winner} with a bid of ${best_price}")
 
 
@@ -28,11 +28,13 @@ while secret_auction == True:
     yes_no = input("Are they any other bidders? Type 'yes' or 'no'. ")
 
     if yes_no == "yes":
-        secret_auction == True
+        secret_auction = True
+        print("\n" * 100)
 
     elif yes_no == "no":
         controller(auction_dict)
-        secret_auction == False
+        secret_auction = False
+        
 
     else:
         print("Please 'yes or 'no' ")
