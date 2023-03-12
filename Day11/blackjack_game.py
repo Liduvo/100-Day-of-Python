@@ -76,4 +76,5 @@ def play():
     print(compare(user_score, computer_score))
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
+    print("\n" * 100)
     play()
